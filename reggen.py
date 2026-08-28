@@ -4,19 +4,19 @@ regdip = ['CD','D','T']
 
 import random
 
-print('Ruplategen v1.0\nMade by BetaT81717(!!Power) on 12.12.2025')
+print('Ruplategen v1.0.1\nMade by BetaT81717 on 28.08.2026')
 while True:
 	def generate(t):
 		if t == '1':
-			print('\n'+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(reglet)+random.choice(reglet)+gencod+'\n')
+			print('\n'+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(reglet)+random.choice(reglet)+random.choice(regcode)+'\n')
 		elif t == '2':
-			print('\n'+random.choice(reglet)+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+gencod+'\n')
+			print('\n'+random.choice(reglet)+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(regcode)+'\n')
 		elif t == '3':
-			print('\n'+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(reglet)+random.choice(reglet)+gencod+'\n')
+			print('\n'+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(reglet)+random.choice(reglet)+random.choice(regcode)+'\n')
 		elif t == '4':
-			print('\n'+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(regdip)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+gencod+'\n')
+			print('\n'+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(regdip)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(regcode)+'\n')
 		elif t == '5':
-			print('\n'+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+gencod+'\n')
+			print('\n'+random.choice(reglet)+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+str(random.randint(0, 9))+random.choice(regcode)+'\n')
 		elif t == '0':
 			quit()
 	generate(input('Choose type:\n1.Regular\n2.Public\n3.Military\n4.Diplomatic\n5.Police\n0.Exit\nYour choice:'))
